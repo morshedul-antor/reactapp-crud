@@ -1,0 +1,21 @@
+:root {
+  --primary: #457dc3;
+  --secondary: #419cd9;
+  --light-secondary: #3ecbcf;
+  --dark: #333;
+  --grey: #7987a1;
+  --dark-grey: #555;
+  --light: #f0f0f0;
+  --light-low: #f8f8f8;
+  --white: #fff;
+  --red: #dd4545;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--light-low);
+}
