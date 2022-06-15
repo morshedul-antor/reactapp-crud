@@ -174,12 +174,11 @@
   .wrapper {
     width: 95%;
     margin-left: 4px;
-    margin-top: -30px;
+    margin-top: -20px;
   }
 
   .wrapper .button {
     display: block;
-    float: none;
     margin: 0 auto;
     padding: 7px 30px;
     font-size: 10px;
@@ -257,29 +256,5 @@
     padding: 6px 10px;
     font-size: 12px;
     width: 12em;
-  }
-
-  .alertMessage {
-    font-size: 12px;
-  }
-
-  .optAllQualification {
-    position: absolute;
-    margin-top: 3.36em;
-    width: 60%;
-  }
-
-  .optSelectQualification {
-    font-size: 10px;
-  }
-
-  .optAllSpeciality {
-    margin-top: 7.58em;
-    width: 60%;
-    left: 24%;
-  }
-
-  .optSelectSpeciality {
-    font-size: 10px;
   }
 }

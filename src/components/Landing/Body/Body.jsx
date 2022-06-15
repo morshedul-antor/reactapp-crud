@@ -18,7 +18,7 @@ export default function Body() {
             <span>Note: Click Login Button to Redirect</span>
           </p>
           <div className={classes.buttonContainer}>
-            <Link to="/home">
+            <Link to="/">
               <button>CRUD</button>
             </Link>
           </div>

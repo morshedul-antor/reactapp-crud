@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Footer from "../Landing/footer/Footer";
+import Footer from "../Landing/Footer/Footer";
 import Navbar from "../Landing/Navbar/Navbar";
 import Create from "./Create/Create";
 import Show from "./Show/Show";

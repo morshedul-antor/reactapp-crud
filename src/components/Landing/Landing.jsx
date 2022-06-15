@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar/Navbar";
 import Body from "./Body/Body";
 import BG from "../../assets/bg.jpg";
-import Footer from "./footer/Footer";
+import Footer from "./Footer/Footer";
 
 export default function Landing() {
   return (

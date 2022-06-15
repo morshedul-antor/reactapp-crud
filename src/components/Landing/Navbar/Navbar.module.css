@@ -65,3 +65,30 @@
   color: var(--white);
   opacity: 0.8;
 }
+
+@media (max-width: 420px) {
+  .nav > div {
+    height: 60px;
+  }
+
+  .nav > div .logo > a {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: -10px;
+  }
+
+  .nav > div .navList {
+    padding: 0;
+    margin-right: -10px;
+  }
+
+  .nav > div .navList a {
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  .nav > div .navList a:last-child {
+    padding: 8px 14px;
+    border-radius: 4px;
+  }
+}
