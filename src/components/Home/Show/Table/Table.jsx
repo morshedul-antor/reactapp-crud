@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Update from "./Update/Update";
 import Delete from "./Delete/Delete";
 
-export default function Table({ users, api }) {
+export default function Table({ users, api, search }) {
   const [updateHide, setUpdateHide] = useState(false);
   const [deleteHide, setDeleteHide] = useState(false);
   let serial = 0;
@@ -25,46 +25,54 @@ export default function Table({ users, api }) {
       </thead>
       <tbody>
         {users &&
-          users.map((data, index) => (
-            <tr className={classes.tableRow} key={index}>
-              <td>{(serial = serial + 1)}</td>
-              <td>{data.name}</td>
-              <td>{data.phone}</td>
-              <td>{data.email}</td>
-              <td>{data.degree}</td>
-              <td>{data.address}</td>
-              <td>
-                <button className={classes.icon}>
-                  <FontAwesomeIcon
-                    icon={faPenToSquare}
-                    onClick={() => setUpdateHide(index)}
+          users
+            .filter(
+              (data) =>
+                data?.name.toLowerCase().includes(search) ||
+                data?.phone.toLowerCase().includes(search) ||
+                data?.email.toLowerCase().includes(search) ||
+                data?.address.toLowerCase().includes(search)
+            )
+            .map((data, index) => (
+              <tr className={classes.tableRow} key={index}>
+                <td>{(serial = serial + 1)}</td>
+                <td>{data.name}</td>
+                <td>{data.phone}</td>
+                <td>{data.email}</td>
+                <td>{data.degree}</td>
+                <td>{data.address}</td>
+                <td>
+                  <button className={classes.icon}>
+                    <FontAwesomeIcon
+                      icon={faPenToSquare}
+                      onClick={() => setUpdateHide(index)}
+                    />
+                  </button>
+                  <button className={classes.icon}>
+                    <FontAwesomeIcon
+                      icon={faTrash}
+                      onClick={() => setDeleteHide(index)}
+                    />
+                  </button>
+                </td>
+                {updateHide === index && (
+                  <Update
+                    index={index}
+                    setUpdateHide={setUpdateHide}
+                    data={data}
+                    api={api}
                   />
-                </button>
-                <button className={classes.icon}>
-                  <FontAwesomeIcon
-                    icon={faTrash}
-                    onClick={() => setDeleteHide(index)}
+                )}
+                {deleteHide === index && (
+                  <Delete
+                    index={index}
+                    setDeleteHide={setDeleteHide}
+                    data={data}
+                    api={api}
                   />
-                </button>
-              </td>
-              {updateHide === index && (
-                <Update
-                  index={index}
-                  setUpdateHide={setUpdateHide}
-                  data={data}
-                  api={api}
-                />
-              )}
-              {deleteHide === index && (
-                <Delete
-                  index={index}
-                  setDeleteHide={setDeleteHide}
-                  data={data}
-                  api={api}
-                />
-              )}
-            </tr>
-          ))}
+                )}
+              </tr>
+            ))}
       </tbody>
     </table>
   );
