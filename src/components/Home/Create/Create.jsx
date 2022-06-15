@@ -46,17 +46,17 @@ export default function Create({ setFormOpen, setListOpen }) {
     <div className={classes.container}>
       <div className={classes.wrapper}>
         <button className={classes.button} onClick={() => openCloseListForm()}>
-          Item List
+          View User List
         </button>
       </div>
       <div className={classes.formWrapper}>
         <FontAwesomeIcon className={classes.icon} icon={faThumbtack} />
-        <div className={classes.logo}>ADD ITEM</div>
+        <div className={classes.logo}>ADD USER</div>
 
         <form onSubmit={(e) => handleSubmit(e)}>
           <div className={classes.section}>
             <FontAwesomeIcon className={classes.leaf} icon={faLeaf} />
-            Details Info
+            Detail Info
           </div>
           <div className={classes.innerWrap}>
             <div className={classes.formGrid}>

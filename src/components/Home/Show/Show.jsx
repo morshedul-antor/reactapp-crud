@@ -48,7 +48,7 @@ export default function Show({ setListOpen, setFormOpen, users, api }) {
           </button>
         </form>
         <button className={classes.button} onClick={() => openClose()}>
-          + Add Item
+          + Add User
         </button>
       </div>
       {tableOpen && <Table users={users} api={api} search={search} />}
