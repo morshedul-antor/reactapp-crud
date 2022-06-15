@@ -1,0 +1,155 @@
+.tableContainer {
+  width: 80%;
+  margin: 6em auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .button {
+  background-color: var(--secondary);
+  border: none;
+  padding: 6px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.wrapper .button > select {
+  background-color: transparent;
+  color: var(--white);
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 2px;
+}
+
+.wrapper .button > select > option {
+  color: var(--dark-grey);
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.wrapper .button a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.wrapper .button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+@media (max-width: 420px) {
+  .tableContainer {
+    margin-top: -20px;
+  }
+
+  .wrapper .button {
+    padding: 7px 10px;
+    font-size: 10px;
+  }
+
+  .tableContainer {
+    width: 100%;
+    padding: 0px 10px;
+  }
+
+  .icon {
+    margin-bottom: -2px;
+    margin-top: -2px;
+  }
+
+  table {
+    margin-top: 10px;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    display: none;
+  }
+
+  tr {
+    margin: 0 0 1rem 0;
+  }
+
+  .tableRow td {
+    display: flex;
+    border: none;
+    position: relative;
+    border-bottom: 1px solid var(--light);
+    font-size: 10px;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  .tableRow td:before {
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    padding-right: 10px;
+    white-space: nowrap;
+    font-size: 10px;
+  }
+  .tableRow td:nth-of-type(1):before {
+    content: "Serial";
+  }
+  .tableRow td:nth-of-type(2):before {
+    content: "Name";
+  }
+  .tableRow td:nth-of-type(3):before {
+    content: "Mobile";
+  }
+  .tableRow td:nth-of-type(4):before {
+    content: "Email";
+  }
+  .tableRow td:nth-of-type(5):before {
+    content: "Specialty";
+  }
+  .tableRow td:nth-of-type(6):before {
+    content: "Degree";
+  }
+  .tableRow td:nth-of-type(7):before {
+    content: "BMDC";
+  }
+  .tableRow td:nth-of-type(8):before {
+    content: "Status";
+  }
+  .tableRow td:nth-of-type(9):before {
+    content: "Action";
+  }
+
+  /* form */
+  .container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    background: rgb(0, 0, 0, 0.4);
+  }
+  .formWrapper {
+    width: 16.6em;
+    padding: 20px;
+  }
+
+  .formWrapper .button {
+    padding: 6px 14px;
+    font-size: 10px;
+  }
+}

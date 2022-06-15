@@ -1,0 +1,96 @@
+.tableMain {
+  border-collapse: separate;
+  border-spacing: 0 4px;
+  display: table;
+  width: 100%;
+}
+
+.tableRow:nth-child(even) {
+  background-color: var(--light);
+}
+
+.tableRow th {
+  box-shadow: 0px 0px 0px 1px var(--light);
+  font-weight: 500;
+  font-size: 14px;
+  padding: 12px;
+  background-color: var(--secondary);
+  border-radius: 4px;
+  color: var(--white);
+}
+
+.tableRow td {
+  text-align: center;
+  font-size: 14px;
+  color: var(--dark);
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 4px;
+}
+
+.icon {
+  font-size: 12px;
+  text-decoration: none;
+  padding: 4px 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.icon:nth-child(1) {
+  color: var(--secondary);
+}
+
+.icon:nth-child(2) {
+  color: var(--red);
+}
+
+.icon:nth-child(1):hover {
+  opacity: 0.8;
+}
+
+.icon:nth-child(2):hover {
+  opacity: 0.8;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .button {
+  background-color: var(--secondary);
+  border: none;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.wrapper .button a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.wrapper .button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.tableMain td.status span {
+  position: relative;
+  border-radius: 30px;
+  padding: 4px 10px 4px 25px;
+}
+
+.tableMain tbody td.status span:after {
+  position: absolute;
+  top: 9px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+}

@@ -1,0 +1,74 @@
+.containerPopup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.formWrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30em;
+  padding: 30px;
+  transform: translate(-50%, -50%);
+  background: var(--white);
+  box-sizing: border-box;
+  box-shadow: 1px 1px var(--light);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.formWrapper .buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.formWrapper .button {
+  padding: 6px 30px;
+  color: var(--white);
+  font-size: 18px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 10px 20px 0 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.formWrapper .button:nth-child(1) {
+  background-color: var(--red);
+}
+
+.formWrapper .button:nth-child(2) {
+  background-color: var(--secondary);
+}
+
+.formWrapper .button:nth-child(1):hover {
+  opacity: 0.8;
+}
+.formWrapper .button:nth-child(2):hover {
+  opacity: 0.8;
+}
+
+.formWrapper .close {
+  position: absolute;
+  top: 4px;
+  right: 12px;
+  transition: all 200ms;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--red);
+  cursor: pointer;
+}
+
+.formWrapper .close:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}

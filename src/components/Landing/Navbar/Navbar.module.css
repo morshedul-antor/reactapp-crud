@@ -1,0 +1,67 @@
+.wrapper {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--white);
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+}
+
+.nav > div {
+  background-color: var(--white);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0px 0px 10px var(--light);
+}
+
+.nav > div .logo > a {
+  font-size: 1.4em;
+  color: var(--primary);
+  font-weight: 620;
+  margin-left: 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav > div .logo:hover {
+  opacity: 0.7;
+}
+
+.nav > div .navList {
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav > div .navList a {
+  font-size: 16px;
+  color: var(--dark);
+  padding-left: 30px;
+  text-decoration: none;
+}
+
+.nav > div .navList a:last-child {
+  background-color: var(--secondary);
+  margin-left: 30px;
+  padding: 10px 30px;
+  color: var(--white);
+  border-radius: 4px;
+  border: none;
+}
+
+.nav > div .navList a:hover {
+  color: var(--secondary);
+}
+
+.nav > div .navList a:last-child:hover {
+  color: var(--white);
+  opacity: 0.8;
+}

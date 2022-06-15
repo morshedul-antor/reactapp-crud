@@ -1,0 +1,285 @@
+.container {
+  width: 80%;
+  margin: 6em auto;
+}
+
+.wrapper {
+  margin: 4px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wrapper .button {
+  position: relative;
+  background-color: var(--secondary);
+  border: none;
+  padding: 8px 30px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.wrapper .button a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.wrapper .button:hover {
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.formWrapper {
+  width: 96%;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 3px 3px 15px var(--light-grey);
+}
+
+.formWrapper .innerWrap {
+  padding: 30px;
+  background: var(--light-low);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.formWrapper .logo {
+  background: linear-gradient(
+    90deg,
+    var(--secondary) 0%,
+    var(--light-secondary) 100%
+  );
+  padding: 14px 30px 15px 10px;
+  text-align: center;
+  margin: -30px -30px 30px -30px;
+  border-radius: 10px 10px 0 0;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.formWrapper .section {
+  color: var(--secondary);
+  margin-top: 0px;
+  margin-bottom: 6px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.section p {
+  text-align: center;
+  margin-top: -30px;
+}
+
+.icon {
+  position: absolute;
+  z-index: 1000;
+  font-size: 1em;
+  color: var(--white);
+  transform: rotate(45deg);
+  right: 12em;
+  margin-top: -14px;
+  opacity: 0.8;
+}
+
+.section .leaf {
+  position: absolute;
+  color: var(--light-secondary);
+  font-size: 12px;
+  margin-top: -6px;
+  margin-left: 12px;
+}
+
+.formWrapper label {
+  display: block;
+  font: 14px;
+  color: var(--dark-grey);
+  margin-bottom: 14px;
+  font-weight: 450;
+}
+
+.formWrapper .select {
+  background-color: var(--white);
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.formWrapper .select option {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.formWrapper input[type="text"],
+.formWrapper input[type="email"],
+.formWrapper input[type="number"],
+.formWrapper input[type="tel"],
+.formWrapper textarea,
+.formWrapper .select {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 2px solid var(--white);
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.35);
+  font-size: 14px;
+  color: var(--dark-grey);
+  outline: none;
+}
+
+.formWrapper input[type="text"]:focus,
+.formWrapper input[type="email"]:focus,
+.formWrapper input[type="number"]:focus,
+.formWrapper input[type="tel"]:focus,
+.formWrapper textarea:focus {
+  border: 2px solid var(--light);
+}
+
+.formWrapper .button {
+  background-color: var(--secondary);
+  padding: 10px 20px;
+  color: var(--white);
+  font-size: 16px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 auto;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 4px;
+  width: 12em;
+  display: block;
+  margin-top: 1.4em;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+@media (max-width: 420px) {
+  .formGrid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .wrapper {
+    width: 95%;
+    margin-left: 4px;
+    margin-top: -30px;
+  }
+
+  .wrapper .button {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    padding: 7px 30px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+
+  .formWrapper {
+    padding: 30px;
+  }
+
+  .formWrapper .logo {
+    padding: 6px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .formWrapper form {
+    margin: -16px;
+  }
+
+  .formWrapper .formMargin {
+    margin-top: -28px;
+  }
+
+  .formWrapper .section {
+    margin-top: -6px;
+    font-size: 14px;
+  }
+
+  .icon {
+    font-size: 0.8em;
+    right: 20px;
+    margin-top: -22px;
+  }
+
+  .section .leaf {
+    font-size: 10px;
+    margin-top: -6px;
+    margin-left: 10px;
+  }
+
+  .formWrapper .innerWrap {
+    padding: 16px 14px 10px 14px;
+    margin-bottom: 0px;
+  }
+
+  .formWrapper label {
+    font-size: 12px;
+  }
+
+  .formGrid label:nth-child(2) {
+    margin-top: -28px;
+  }
+
+  .formWrapper .select {
+    font-size: 10px;
+  }
+
+  .formWrapper .select option {
+    font-size: 10px;
+  }
+
+  .formWrapper input[type="text"],
+  .formWrapper input[type="email"],
+  .formWrapper input[type="number"],
+  .formWrapper input[type="tel"],
+  .formWrapper input[type="password"],
+  .formWrapper textarea,
+  .formWrapper select {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .formWrapper .button {
+    padding: 6px 10px;
+    font-size: 12px;
+    width: 12em;
+  }
+
+  .alertMessage {
+    font-size: 12px;
+  }
+
+  .optAllQualification {
+    position: absolute;
+    margin-top: 3.36em;
+    width: 60%;
+  }
+
+  .optSelectQualification {
+    font-size: 10px;
+  }
+
+  .optAllSpeciality {
+    margin-top: 7.58em;
+    width: 60%;
+    left: 24%;
+  }
+
+  .optSelectSpeciality {
+    font-size: 10px;
+  }
+}
