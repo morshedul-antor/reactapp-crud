@@ -75,3 +75,44 @@
   opacity: 0.8;
   margin-top: -8em;
 }
+
+@media (max-width: 420px) {
+  .body {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+
+  .body .box:nth-child(1) {
+    margin-top: 2em;
+  }
+
+  .box .title > p {
+    margin-top: 5em;
+    font-size: 1.2em;
+  }
+
+  .box .title > span {
+    font-size: 1em;
+  }
+
+  .box > p {
+    font-size: 0.8em;
+  }
+
+  .box > p > span {
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+
+  .buttonContainer > a > button {
+    padding: 8px 30px;
+    font-size: 12px;
+    margin-left: 0px;
+  }
+
+  .box > .img {
+    height: 20em;
+    margin-top: -28em;
+    position: absolute;
+  }
+}

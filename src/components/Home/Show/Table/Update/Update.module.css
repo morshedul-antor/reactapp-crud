@@ -133,3 +133,56 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
 }
+
+@media (max-width: 420px) {
+  .formGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0px;
+  }
+
+  .container {
+    overflow: auto;
+  }
+
+  .formWrapper {
+    width: 18em;
+    padding: 30px 20px;
+    box-shadow: 1px 1px var(--light-low);
+    background-color: var(--light);
+  }
+
+  .formWrapper .close {
+    top: 4px;
+    right: 10px;
+  }
+
+  .formWrapper .section {
+    margin-top: -4px;
+    margin-bottom: 6px;
+    font-size: 1em;
+  }
+
+  .formWrapper .innerWrap {
+    padding-bottom: 10px;
+  }
+
+  .formWrapper label {
+    font-size: 14px;
+  }
+
+  .formWrapper input[type="text"],
+  .formWrapper input[type="email"],
+  .formWrapper input[type="number"],
+  .formWrapper input[type="tel"],
+  .formWrapper textarea,
+  .formWrapper .select {
+    font-size: 12px;
+  }
+
+  .formWrapper .button {
+    margin-top: 10px;
+    margin-bottom: -20px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}

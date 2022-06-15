@@ -72,3 +72,16 @@
   opacity: 0.8;
   transition: 0.5s;
 }
+
+@media (max-width: 420px) {
+  .formWrapper {
+    width: 18em;
+    padding: 24px;
+  }
+
+  .formWrapper .button {
+    font-size: 14px;
+    margin: 10px;
+    text-align: center;
+  }
+}

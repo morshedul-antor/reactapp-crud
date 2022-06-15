@@ -54,3 +54,23 @@
 .containerFlex > div > span {
   margin-top: 3.2em;
 }
+
+@media (max-width: 420px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px 10px;
+  }
+
+  .containerFlex img {
+    height: 4.8em;
+  }
+
+  .containerFlex h6 {
+    font-size: 1.1em;
+  }
+
+  .containerFlex span {
+    font-size: 0.9em;
+  }
+}

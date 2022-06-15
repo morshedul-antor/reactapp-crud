@@ -79,16 +79,16 @@
 
   .nav > div .navList {
     padding: 0;
-    margin-right: -10px;
+    margin-right: -4px;
   }
 
   .nav > div .navList a {
     font-size: 12px;
-    padding-left: 20px;
+    margin: 0px -10px;
   }
 
   .nav > div .navList a:last-child {
-    padding: 8px 14px;
+    padding: 8px 20px;
     border-radius: 4px;
   }
 }

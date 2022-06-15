@@ -13,8 +13,8 @@ export default function Body() {
             <span>React Task</span>
           </div>
           <p>
-            Simple Create, Read, Update and Delete (CRUD) Application using
-            React-Redux
+            Simple Mobile Responsive Create, Read, Update and Delete (CRUD)
+            Application using React-Redux
             <span>Note: Click Login Button to Redirect</span>
           </p>
           <div className={classes.buttonContainer}>

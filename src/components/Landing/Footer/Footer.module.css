@@ -6,3 +6,9 @@
   right: 1em;
   bottom: 2.6%;
 }
+
+@media (max-width: 420px) {
+  .footer > span {
+    font-size: 10px;
+  }
+}

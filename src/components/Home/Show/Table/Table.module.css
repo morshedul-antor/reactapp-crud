@@ -147,24 +147,18 @@
     content: "Name";
   }
   .tableRow td:nth-of-type(3):before {
-    content: "Mobile";
+    content: "Phone";
   }
   .tableRow td:nth-of-type(4):before {
     content: "Email";
   }
   .tableRow td:nth-of-type(5):before {
-    content: "Specialty";
-  }
-  .tableRow td:nth-of-type(6):before {
     content: "Degree";
   }
+  .tableRow td:nth-of-type(6):before {
+    content: "Address";
+  }
   .tableRow td:nth-of-type(7):before {
-    content: "BMDC";
-  }
-  .tableRow td:nth-of-type(8):before {
-    content: "Status";
-  }
-  .tableRow td:nth-of-type(9):before {
     content: "Action";
   }
 }

@@ -78,16 +78,28 @@
 
 @media (max-width: 420px) {
   .tableContainer {
-    margin-top: 1em;
+    margin: 4.2em auto;
   }
 
-  .wrapper .button {
-    padding: 7px 10px;
+  .wrapper {
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+  .wrapper .searchField {
+    padding: 8px 10px;
+    width: 90%;
     font-size: 10px;
   }
 
-  .tableContainer {
-    width: 100%;
-    padding: 0px 10px;
+  .wrapper .button {
+    padding: 6px 10px;
+    margin: 10px 0px;
+    font-size: 12px;
+  }
+
+  .wrapper .button > select {
+    font-size: 12px;
+    padding: 0;
   }
 }

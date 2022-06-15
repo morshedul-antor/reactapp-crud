@@ -103,17 +103,6 @@
   font-weight: 450;
 }
 
-.formWrapper .select {
-  background-color: var(--white);
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-.formWrapper .select option {
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
 .formWrapper input[type="text"],
 .formWrapper input[type="email"],
 .formWrapper input[type="number"],
@@ -167,62 +156,48 @@
 
 @media (max-width: 420px) {
   .formGrid {
-    display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
 
   .wrapper {
-    width: 95%;
-    margin-left: 4px;
     margin-top: -20px;
   }
 
   .wrapper .button {
-    display: block;
     margin: 0 auto;
-    padding: 7px 30px;
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 12px;
   }
 
   .formWrapper {
-    padding: 30px;
+    width: 80%;
+  }
+
+  .formWrapper .innerWrap {
+    padding: 20px;
+  }
+
+  .formWrapper .section {
+    font-size: 16px;
   }
 
   .formWrapper .logo {
     padding: 6px;
     font-size: 12px;
-    font-weight: 500;
   }
 
   .formWrapper form {
     margin: -16px;
   }
 
-  .formWrapper .formMargin {
-    margin-top: -28px;
-  }
-
-  .formWrapper .section {
-    margin-top: -6px;
-    font-size: 14px;
-  }
-
   .icon {
-    font-size: 0.8em;
-    right: 20px;
+    font-size: 10px;
+    right: 5em;
     margin-top: -22px;
   }
 
   .section .leaf {
     font-size: 10px;
     margin-top: -6px;
-    margin-left: 10px;
-  }
-
-  .formWrapper .innerWrap {
-    padding: 16px 14px 10px 14px;
-    margin-bottom: 0px;
   }
 
   .formWrapper label {
@@ -233,21 +208,11 @@
     margin-top: -28px;
   }
 
-  .formWrapper .select {
-    font-size: 10px;
-  }
-
-  .formWrapper .select option {
-    font-size: 10px;
-  }
-
   .formWrapper input[type="text"],
   .formWrapper input[type="email"],
   .formWrapper input[type="number"],
   .formWrapper input[type="tel"],
-  .formWrapper input[type="password"],
-  .formWrapper textarea,
-  .formWrapper select {
+  .formWrapper textarea {
     padding: 6px;
     font-size: 12px;
   }
@@ -255,6 +220,6 @@
   .formWrapper .button {
     padding: 6px 10px;
     font-size: 12px;
-    width: 12em;
+    width: 10em;
   }
 }
